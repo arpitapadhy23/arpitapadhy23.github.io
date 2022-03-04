@@ -4,30 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do list app</title>
+    <title>Document</title>
 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">Food<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu()";></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu()";>Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()";>About</a></li>
+            <li><a href="#menu" onclick="toggleMenu()";>Menu</a></li>
+            <li><a href="#expert" onclick="toggleMenu()";>Expert</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()";>Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()";>Contact</a></li>
+        </ul>
+    </header>
 
-    <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans mt-20">
-        <div class="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
-          <div class="mb-4">
-            <h1 class="text-3xl md:text-4xl text-indigo-600 font-medium mb-2">
-              To-Do List App
-            </h1>
-            <div class="flex mt-4">
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker" name="text" id="text" placeholder="Add Todo" />
-              <input type="hidden" id="saveIndex" />
-              <button class="p-2 lg:px-4 md:mx-2 text-center border border-solid border-indigo-600 rounded text-white bg-indigo-600 transition-colors duration-300 mt-1 md:mt-0 md:ml-1" id="add-task-btn">Add</button>
-              <button class="p-2 lg:px-4 md:mx-2 text-center border border-solid border-indigo-600 rounded bg-indigo-600 text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1" style="display: none" id="save-todo-btn">Edit Todo</button>
-            </div>
-          </div>
-          <div id="listBox"></div>
+
+    <section class= "banner" id= "banner">
+        <div class="content">
+            <h2>Always choose Good</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor repellat reprehenderit maiores porro minus suscipit impedit modi quo libero architecto? Tempora, neque totam. Iusto, voluptates. Natus, dolorem. Non, enim quasi.</p>
+            <a href="#" class="btn">Our Menu</a>
         </div>
-      </div>
-    
 
-      <script src="script.js"></script>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus soluta voluptatibus sint dolor deleniti tempore corrupti, iste sit qui quisquam iure, nam beatae, accusamus possimus enim necessitatibus quo molestiae!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit, placeat et ipsa tenetur expedita voluptas eveniet non aliquam! Possimus nulla saepe voluptatem et tempore ab hic aspernatur aliquid est!</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="img1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="menu" id="menu">
+       <div class="title">
+           <h2 class="titleText"><span>O</span>ur Menu</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+       </div>
+       <div class="content">
+           <div class="box">
+               <div class="imgBx">
+                   <img src="menu1.jpg" alt="">
+               </div>
+               <div class="text">
+                   <h3>Special Salads</h3>
+               </div>
+           </div>
+           <div class="box">
+           <div class="imgBx">
+                 <img src="menu2.jpg" alt="">
+              </div>
+             <div class="text">
+                 <h3>Special Soups</h3>
+              </div>
+            </div>
+           
+            <div class="box">
+                <div class="imgBx">
+                    <img src="menu3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Pastas</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="menu4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="menu5.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Soups</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="menu6.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="title">
+           <a href="#" class="btn">View all</a>
+       </div>
+   </section>
+
+   <section class="expert" id="expert">
+       <div class="title">
+           <h2 class="titleText"><span>O</span>ur kitchen expert</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+       </div>
+
+       <div class="content">
+           <div class="box">
+               <div class="imgBx">
+                   <img src="expert1.jpg" alt="">
+               </div>
+               <div class="text">
+                   <h3>Someone famous</h3>
+               </div>
+           </div>
+           <div class="box">
+             <div class="imgBx">
+                 <img src="expert2.jpg" alt="">
+             </div>
+             <div class="text">
+                 <h3>Someone famous</h3>
+             </div>
+         </div>
+         <div class="box">
+             <div class="imgBx">
+                 <img src="expert3.jpg" alt="">
+             </div>
+             <div class="text">
+                 <h3>Someone famous</h3>
+             </div>
+         </div>
+         <div class="box">
+             <div class="imgBx">
+                 <img src="expert4.jpg" alt="">
+             </div>
+             <div class="text">
+                 <h3>Someone famous</h3>
+             </div>
+          </div>
+       </div>
+       
+
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText"><span>T</span>hey said about us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="testi1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam facilis beatae voluptas dolorem officiis adipisci ad magni quidem aliquid.</p>
+                    <h3>Someone famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="testi2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam facilis beatae voluptas dolorem officiis adipisci ad magni quidem aliquid.</p>
+                    <h3>Someone famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="testi3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam facilis beatae voluptas dolorem officiis adipisci ad magni quidem aliquid.</p>
+                    <h3>Someone famous</h3>
+                </div>
+            </div>
+        </div>    
+    </section>    
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>  
+    
+    <div class="copyrightText">
+        <p> Copyright 2020 <a href="#">   Choose good   </a>   All rights reserved  </p>
+    </div>
+
+
+    
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header= document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle= document.querySelector('.menuToggle');
+            const navigation= document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active')
+        }
+        
+    </script>
 </body>
 </html>
